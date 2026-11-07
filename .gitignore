@@ -1,0 +1,28 @@
+# 本地协作状态与执行器缓存（不进入公开仓库）
+.cw/
+.workbuddy/
+.codebuddy/
+.private/
+.local/
+.cache/
+.tmp/
+tmp/
+logs/
+*.log
+
+# 凭据与本地环境
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# 编辑器与系统元数据
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 说明：.agents/ 与技能内的 assets/templates/ 是公开发布内容，不要忽略。
