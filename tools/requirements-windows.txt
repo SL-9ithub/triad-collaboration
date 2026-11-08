@@ -1,0 +1,7 @@
+# Windows-only dependency for the automatic channel.
+#
+# Everything else in tools/triad_bridge uses the Python standard library only.
+# pywin32 is required to tighten and read back the ACL of new private backup
+# directories. Without it `submit` refuses to run (backup_acl_unavailable);
+# there is no icacls downgrade and no "command exited 0 = safe" shortcut.
+pywin32>=306

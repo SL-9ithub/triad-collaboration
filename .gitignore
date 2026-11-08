@@ -18,6 +18,39 @@ logs/
 credentials.json
 secrets.json
 
+# Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# 数据库文件及 sidecar（真实库与本机副本都不提交）
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# 本机配置、备份与运行输出
+triad-config.json
+config.local.json
+config.local.*.json
+triad-backups/
+backups/
+outputs/
+_review/
+
 # 编辑器与系统元数据
 .vscode/
 .idea/
@@ -26,3 +59,5 @@ Thumbs.db
 desktop.ini
 
 # 说明：.agents/ 与技能内的 assets/templates/ 是公开发布内容，不要忽略。
+# 说明：tools/config.example.json 是模板，必须保留。
+!tools/config.example.json
